@@ -6,6 +6,7 @@ require("dotenv").config({
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  trailingSlash: "never",
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
   },
@@ -34,5 +35,14 @@ module.exports = {
         credentials: require('./google-credentials.json')
       }
     },
+    {
+      resolve: "gatsby-source-google-docs",
+      options: {
+        // https://drive.google.com/drive/folders/FOLDER_ID
+        folder: "1t0WhlWgL1Aijcaq1LuQ3DMeUosO3__OL",
+        createPages: true,
+      },
+    },
+    `gatsby-plugin-mdx`
   ],
 }

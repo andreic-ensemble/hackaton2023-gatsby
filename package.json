@@ -17,6 +17,8 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "gatsby": "^5.11.0",
+    "gatsby-plugin-mdx": "^5.11.0",
+    "gatsby-source-google-docs": "^2.4.2",
     "gatsby-source-google-spreadsheets": "^3.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
