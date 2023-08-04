@@ -43,6 +43,6 @@ module.exports = {
         createPages: true,
       },
     },
-    `gatsby-plugin-mdx`
+    `gatsby-transformer-remark`
   ],
 }
