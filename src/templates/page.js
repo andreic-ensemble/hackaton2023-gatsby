@@ -1,9 +1,10 @@
 import {graphql} from "gatsby"
-import {MDXRenderer} from "gatsby-plugin-mdx"
+
 import React from "react"
+import renderAst from "../utils/render-ast";
 
 const PageTemplate = (props, path) => {
-  console.log(props)
+  console.log(props.data)
   console.log(path)
   return (
     <React.Fragment>
@@ -14,7 +15,10 @@ const PageTemplate = (props, path) => {
         https://support.google.com/docs/answer/86629
       */}
       {/*{cover && <GatsbyImage image={getImage(cover.image)} />}*/}
-      <MDXRenderer>{props.data.page.markdown}</MDXRenderer>
+
+      {
+        renderAst(props.data.page.childMarkdownRemark.htmlAst)
+      }
     </React.Fragment>
   )
 }
@@ -25,7 +29,9 @@ export const pageQuery = graphql`
   query Page($path: String!) {
     page: googleDocs(slug: {eq: $path}) {
       name
-      markdown
+      childMarkdownRemark {
+      htmlAst
+    }
     }
   }
 `
