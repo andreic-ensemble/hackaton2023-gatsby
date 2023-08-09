@@ -1,0 +1,12 @@
+.product-card-list-wrapper {
+    display: flex;
+}
+
+.product-card-list-wrapper .product-card {
+    max-width: 150px;
+}
+
+
+.product-card-list-wrapper .product-card .product-card-image-wrapper {
+    background: red;
+}
