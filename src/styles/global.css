@@ -224,3 +224,29 @@ main .section {
 main .section.collections {
     background-color: white;
 }
+
+.card {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 16px;
+}
+
+.card > div {
+    border-radius: 12px;
+}
+
+.card .teal {
+    background-color: var(--teal);
+}
+.card .purple {
+    background-color: var(--purple);
+}
+.card .black {
+    background-color: var(--black);
+}
+
+.card img {
+
+}

@@ -15,6 +15,7 @@ const PageTemplate = (props, path) => {
         </div>
 
         <div>
+
           {
             renderAst(props.data.page.childMarkdownRemark.htmlAst)
           }
