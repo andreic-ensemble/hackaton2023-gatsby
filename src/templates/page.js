@@ -2,13 +2,13 @@ import {graphql} from "gatsby"
 
 import React from "react"
 import renderAst from "../utils/render-ast";
+import './page.css';
 
 const PageTemplate = (props, path) => {
   console.log(props.data)
   console.log(path)
   return (
     <React.Fragment>
-      <h1>{props.data.page.name}</h1>
       {/*
         To add a cover:
         Add an image in your Google Doc first page header

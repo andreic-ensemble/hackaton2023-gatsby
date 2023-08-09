@@ -4,7 +4,7 @@
     --purple: #98A8F8;
     --lightpurple: #BCCEF8;
     --black: #373640;
-    --neon-green: #BCCEF8;
+    --neon-green: #C1FFD7;
     --text-color: #000;
     --link-color: #035fe6;
     --link-hover-color: #136ff6;
@@ -240,6 +240,10 @@ main .section.collections {
 .card .teal {
     background-color: var(--teal);
 }
+
+.card .teal p {
+    background: transparent;
+}
 .card .purple {
     background-color: var(--purple);
 }
@@ -247,6 +251,13 @@ main .section.collections {
     background-color: var(--black);
 }
 
-.card img {
-
+.card .blue {
+    background-color: var(--lightpurple);
 }
+
+.card .green {
+    background-color: var(--neon-green);
+}
+
+
+
