@@ -18,9 +18,9 @@ jobs:
       - name: Create .env file 📃
         run: |
           touch .env
-          echo "GOOGLE_OAUTH_CLIENT_ID=${{vars.GOOGLE_OAUTH_CLIENT_ID}}" >> .env
-          echo "GOOGLE_OAUTH_CLIENT_SECRET=${{vars.GOOGLE_OAUTH_CLIENT_SECRET}}" >> .env
-          echo "GOOGLE_DOCS_TOKEN=${{vars.GOOGLE_DOCS_TOKEN}}" >> .env         
+          echo "GOOGLE_OAUTH_CLIENT_ID=${{secrets.GOOGLE_OAUTH_CLIENT_ID}}" >> .env
+          echo "GOOGLE_OAUTH_CLIENT_SECRET=${{secrets.GOOGLE_OAUTH_CLIENT_SECRET}}" >> .env
+          echo "GOOGLE_DOCS_TOKEN=${{secrets.GOOGLE_DOCS_TOKEN}}" >> .env         
         
       - name: Caching Gatsby 📦
         id: gatsby-cache-build
