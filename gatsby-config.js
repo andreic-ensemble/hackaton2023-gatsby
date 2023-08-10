@@ -28,13 +28,13 @@ module.exports = {
     //     },
     //   }
     // },
-    {
-      resolve: 'gatsby-source-google-spreadsheets',
-      options: {
-        spreadsheetId: '1EgZbxlPqe1ErEjAeAFKuQpKm1c0CjeQ9DrWkZnXUqOM',
-        credentials: require('./google-credentials.json')
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-google-spreadsheets',
+    //   options: {
+    //     spreadsheetId: '1EgZbxlPqe1ErEjAeAFKuQpKm1c0CjeQ9DrWkZnXUqOM',
+    //     credentials: require('./google-credentials.json')
+    //   }
+    // },
     {
       resolve: "gatsby-source-google-docs",
       options: {
